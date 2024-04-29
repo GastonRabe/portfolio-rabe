@@ -1,0 +1,14 @@
+#main-container {
+    width: 100vw;
+    height: 100vh;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+}
+
+div {
+    background-color: #04c4fc;
+    outline: black 1px solid;
+    height: 33vh;
+    outline: black 3px solid;
+}
