@@ -12,13 +12,13 @@ import { Language } from "../components/Language.jsx";
 
 export const MainPage = () => {
   return (
-    <div id="main-container">
+    <div id="main-page">
       <PersonalInfo />
-      <div>
+      <div id="sw-social-container">
+        <Social />
         <SwitchLang />
         <SwitchLight />
       </div>
-      <Social />
       <Education />
       <Title />
       <Language />

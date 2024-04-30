@@ -1,6 +1,4 @@
 import { useState } from "react";
-import "./styles/portfolioApp.css";
-import logo from "./assets/logo.png";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { MainPage } from "./pages/MainPage.jsx";
 import { PersonalInfoPage } from "./pages/PersonalInfoPage.jsx";

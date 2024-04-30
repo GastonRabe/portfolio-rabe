@@ -1,7 +1,7 @@
-import "../styles/pages.css";
+import "../styles/personalInfo.css";
 
 export const PersonalInfo = () => {
   return (
-    <div className="section-container">PersonalInfo</div>
+    <div id="container-personal" className="container">PersonalInfo</div>
   )
 }

@@ -1,7 +1,7 @@
-import "../styles/pages.css";
+
 
 export const PersonalInfoPage = () => {
   return (
-    <div className="section-container">PersonalInfoPage</div>
+    <div className="page">PersonalInfoPage</div>
   )
 }
