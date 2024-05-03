@@ -1,9 +1,23 @@
-.container {
-    min-width: 100px;
-    width: 50%;
-    height: 50%;
+.sw-component {
+    height: 100%;
     display: flex;
-    justify-content: center; 
+    flex-wrap: wrap;
+    justify-content: end; 
     align-items: center;
+    margin: 0px 30px;
+}
+
+#spain {
+    height: 45px;
+}
+
+#usa {
+    border-radius: 200px;
+    height: 30px;
+}
+
+.light-icon {
+    font-size: 20px;
+    color: aliceblue;
 }
 

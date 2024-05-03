@@ -5,10 +5,10 @@ import { BrightnessHighFill, MoonFill } from 'react-bootstrap-icons';
 
 export const SwitchLight = () => {
   return (
-    <div className="container" id="light">
-      <BrightnessHighFill />
-      <Switch className="switch" color="default"/>
-      <MoonFill />
+    <div className="sw-component" id="light">
+      <BrightnessHighFill className="light-icon"/>
+      <Switch className="switch" color="primary"/>
+      <MoonFill className="light-icon"/>
     </div>
   )
 }

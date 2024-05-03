@@ -1,9 +1,8 @@
-#container {
+#social-component {
     display: flex;
-    justify-content: space-around;
-    background-color: var(--color-principal);
-    width: 100vw;
-    height: 50%;
+    justify-content: start;
+    width: 30%;
+    height: 100%;
     flex-wrap: wrap;
     align-content: center;
     
@@ -11,8 +10,16 @@
 
 .icono {
     font-size: 50px;
+    width: 50px;
 }
 
 #linkedin {
     color: #0e76a8;
+}
+.social-element {
+    margin: 0px 10px;
+}
+
+#avatar {
+    border-radius: 200px;
 }

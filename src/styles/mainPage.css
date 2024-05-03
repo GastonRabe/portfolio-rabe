@@ -1,29 +1,23 @@
 :root {
-    --fuente: Georgia, serif;
+    --fuente: serif, monospace;
     --color-principal: #04c4fc;
-    --color-secundario: #055168;
+    --color-secundario: #fff;
 }
 
 #main-page {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-
-#sw-social-container {
-    width: 20vw;
-    height: 33vh;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    outline: black 3px solid;
-    background-color: var(--color-principal);
     font-family: var(--fuente);
-
+    font-weight: bold;
 }
 
-.container {
-    background-color: #055168;
+#particles {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--color-principal);
 }

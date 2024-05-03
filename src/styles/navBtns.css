@@ -1,0 +1,50 @@
+.btn-76 {
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--color-principal);
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  border-radius: 100px;
+}
+
+.btn-76:-moz-focusring {
+  outline: auto;
+}
+
+.btn-76 svg {
+  display: block;
+}
+
+.btn-76 [hidden] {
+  display: none;
+}
+
+.btn-76 {
+  --neon: var(--color-secundario);
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  outline: 4px solid #fff;
+  outline-offset: -4px;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.5s linear 0s;
+}
+
+.btn-76:hover {
+  background: var(--neon);
+  box-shadow: 0 0 5px var(--neon), 0 0 25px var(--neon), 0 0 50px var(--neon),
+    0 0 100px var(--neon);
+  color: var(--color-principal);
+  outline-color: transparent;
+  transition: 0.5s linear 0s;
+}
