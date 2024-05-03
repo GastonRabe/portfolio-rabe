@@ -1,0 +1,12 @@
+#card-container {
+    width: 250px;
+    height: 250px;
+    background-color: var(--color-secundario);
+    margin: 20px;
+    border: 2px solid var(--color-secundario);
+    box-shadow:  0px 0px 50px var(--color-secundario);
+}
+
+.card-text {
+    margin-top: 20px;
+}

@@ -24,9 +24,12 @@
 }
 
 #am-arrow {
-    font-size: 100px;
     position: absolute;
     bottom: 10px;
+}
+
+#am-title, #am-arrow {
+  font-size: 100px;
 }
 
 @keyframes resize {

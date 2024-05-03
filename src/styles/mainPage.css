@@ -1,7 +1,8 @@
 :root {
-    --fuente: serif, monospace;
+    --fuente: "IBM Plex Sans", serif;
     --color-principal: #04c4fc;
     --color-secundario: #fff;
+    --color-terciario: #6ac1db;
 }
 
 #main-page {
@@ -19,5 +20,6 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: var(--color-principal);
+    /* background-color: var(--color-principal); */
+    background: radial-gradient(circle at bottom left, var(--color-terciario) 30%, var(--color-principal) 50%); 
 }

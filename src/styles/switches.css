@@ -7,14 +7,10 @@
     margin: 0px 30px;
 }
 
-#spain {
-    height: 45px;
+.country-logo {
+    width: 25px;
 }
 
-#usa {
-    border-radius: 200px;
-    height: 30px;
-}
 
 .light-icon {
     font-size: 20px;
