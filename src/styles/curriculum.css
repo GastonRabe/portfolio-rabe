@@ -1,0 +1,13 @@
+#cv-icono {
+    font-size: 80px;
+    color: red;
+}
+
+#curriculum-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 20px;
+    color: black;
+}

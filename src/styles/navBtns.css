@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   border-radius: 100px;
+  font-family: var(--fuente);
 }
 
 .btn-76:-moz-focusring {

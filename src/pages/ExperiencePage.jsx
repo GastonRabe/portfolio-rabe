@@ -2,6 +2,10 @@ import "../styles/experiencePage.css";
 import "../styles/pages.css";
 import { Card } from "../components/Card.jsx";
 import { Education } from "../components/Education.jsx";
+import { Curriculum } from "../components/Curriculum.jsx";
+import cvEnglish from "../assets/cvEnglish.pdf";
+import cvSpanish from "../assets/cvSpanish.pdf";
+
 
 export const ExperiencePage = () => {
     return (
@@ -9,9 +13,9 @@ export const ExperiencePage = () => {
       <div id="ec-education-container" className="ec-element">
         "education": [
           
-          <Education institution="Instituto Juan Gutenberg (IJG)" degree="School" date="December 2017"></Education>
-          <Education institution="National University of Mar del Plata (UNMdP)" degree="Informatics Engineering" date="May 2024"></Education>
-          ]
+          <Education institution="Instituto Juan Gutenberg (IJG)" degree="School" date="December 2017" hasNext="true"></Education>
+          <Education institution="National University of Mar del Plata (UNMdP)" degree="Informatics Engineering" date="May 2024" hasNext="false"></Education>
+        ]
       </div>
       <div id="ec-work-container" className="ec-element">
         <Card work="Researcher and Developer" dateAndEnterprise="InfoLab, Jul 2021 - Oct 2021"
@@ -22,6 +26,10 @@ export const ExperiencePage = () => {
           description="Analysis of the company's data model. Creation of denormalized database design. Development of Power BI dashboards with daily data extraction." className="experience-card"/>
         <Card work="Full Stack Developer" dateAndEnterprise="E2T, May 2024 - Present"
           description="Frontend with JQuery. Backend with Node.js" className="experience-card"/>
+      </div>
+      <div id="ec-curriculum-container">
+        <Curriculum cv={cvEnglish} description="English CV" className="ec-curriculum-icon"></Curriculum>
+        <Curriculum cv={cvSpanish} description="Spanish CV" className="ec-curriculum-icon"></Curriculum>
       </div>
 
     </div>
