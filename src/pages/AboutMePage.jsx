@@ -3,6 +3,8 @@ import logo from "../assets/logo.png"
 import "../styles/aboutMePage.css";
 import "../styles/pages.css";
 import Arrow from '@mui/icons-material/KeyboardDoubleArrowDownSharp';
+import { useContext } from "react";
+import { LanguageContext } from "../context/LanguageContext";
 
 export const AboutMePage = () => {
 
@@ -11,7 +13,7 @@ export const AboutMePage = () => {
     spanish: "Ingeniero en Informática"
   }
 
-  const language = "english";
+  const {language} = useContext(LanguageContext);
   
 
   return (

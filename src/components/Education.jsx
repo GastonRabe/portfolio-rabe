@@ -1,4 +1,6 @@
 import "../styles/education.css"
+import { useContext } from 'react';
+import { LanguageContext } from '../context/LanguageContext';
 
 export const Education = ({props}) => {
   const {institution, degree, date, hasNext} = props;
@@ -21,7 +23,7 @@ export const Education = ({props}) => {
         spanish: "fecha"
       }
     
-      const language = "english";
+      const {language} = useContext(LanguageContext);
 
     if (hasNext === 'true')
         coma=',';

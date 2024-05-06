@@ -5,6 +5,8 @@ import { Education } from "../components/Education.jsx";
 import { Curriculum } from "../components/Curriculum.jsx";
 import cvEnglish from "../assets/cvEnglish.pdf";
 import cvSpanish from "../assets/cvSpanish.pdf";
+import { useContext } from "react";
+import { LanguageContext } from "../context/LanguageContext";
 
 
 export const ExperiencePage = () => {
@@ -96,7 +98,7 @@ export const ExperiencePage = () => {
       spanish: "educación"
     }
 
-    const language = "english";
+    const {language} = useContext(LanguageContext);
 
 
     return (

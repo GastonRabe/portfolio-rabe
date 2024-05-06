@@ -4,6 +4,8 @@ import { SwitchLight } from "../components/SwitchLight.jsx";
 import { NavLink } from "react-router-dom";
 import "../styles/navBar.css";
 import "../styles/navBtns.css";
+import { useContext } from "react";
+import { LanguageContext } from "../context/LanguageContext.jsx";
 
 
 export const NavBar = () => {
@@ -18,7 +20,7 @@ export const NavBar = () => {
     spanish: "Contacto"
   }
 
-  const language = "english";
+  const {language} = useContext(LanguageContext);
 
 
   return (

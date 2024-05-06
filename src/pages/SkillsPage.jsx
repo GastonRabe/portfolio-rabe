@@ -21,7 +21,8 @@ import python from "../assets/python.png";
 import usa from "../assets/usa.png";
 import spa from "../assets/spa.png";
 import germ from "../assets/germ.png";
-import { useRef, useEffect} from 'react';
+import { useRef, useEffect, useContext} from 'react';
+import { LanguageContext } from "../context/LanguageContext";
 
 
 
@@ -87,7 +88,7 @@ export const SkillsPage = () => {
   }
 
 
-  const language = "english";
+  const {language} = useContext(LanguageContext);
 
 
   
