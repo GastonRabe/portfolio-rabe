@@ -7,7 +7,7 @@ import { ExperiencePage } from "./ExperiencePage.jsx";
 
 export const MainPage = () => {
   return (
-    <div id="main-page">
+    <div id="main-page" className="main-page-container">
       <ParticlesComp id="particles"/>
       <NavBar id="main-page-navBar"/>
       <AboutMePage id="main-page-aboutMe" className="scroll-page"/>

@@ -1,4 +1,4 @@
-import IconoPDF from '@mui/icons-material/PictureAsPdf';
+
 import "../styles/curriculum.css";
 import { FilePdf } from 'react-bootstrap-icons';
 export const Curriculum = ({cv, description}) => {

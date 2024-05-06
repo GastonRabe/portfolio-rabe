@@ -1,11 +1,12 @@
 :root {
     --fuente: "IBM Plex Sans", serif;
-    --color-principal: #04c4fc;
-    --color-secundario: #fff;
-    --color-terciario: #6ac1db;
+    --color-principal: #00001a;
+    --color-secundario: #888;
+    --color-terciario: #2b2b44;
+    --color-opuesto: #fff;
 }
 
-#main-page {
+.main-page-container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -21,5 +22,5 @@
     height: 100%;
     position: fixed;
     /* background-color: var(--color-principal); */
-    background: radial-gradient(circle at bottom left, var(--color-terciario) 30%, var(--color-principal) 50%); 
+    background: radial-gradient(circle at bottom left, var(--color-terciario) 5%, var(--color-principal) 30%); 
 }

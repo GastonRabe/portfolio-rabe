@@ -8,12 +8,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 50px;
 }
 
 #img-logo {
-    filter: drop-shadow(0px 0px 30px #000);
-    animation: resize 3s infinite;
+    filter: drop-shadow(0px 0px 30px var(--color-opuesto));
+    animation: resize 5s infinite;
     padding: 20px;
 }
 
@@ -29,12 +30,17 @@
 }
 
 #am-title, #am-arrow {
-  font-size: 100px;
+  font-size: 80px;
 }
+
+
 
 @keyframes resize {
     0%, 100% {
       transform: scale(1);
+    }
+    25%, 75% {
+      transform: scale(1.1);
     }
     50% {
       transform: scale(1.2);

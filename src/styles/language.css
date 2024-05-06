@@ -5,9 +5,9 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: 50px;
 }
 
 #language-img {
-    width: 100px;
+    width: 70px;
+    margin-bottom: 5px;
 }

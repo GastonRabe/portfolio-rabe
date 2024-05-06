@@ -28,70 +28,102 @@ import { useRef, useEffect} from 'react';
 export const SkillsPage = () => {
 
 
-  const contenedorRef = useRef(null);
+  const contenedorRefs = useRef([]);
 
   useEffect(() => {
-    const contenedor = contenedorRef.current;
-    const componentes = contenedor.querySelectorAll('.skill-icon');
+    const contenedores = document.querySelectorAll('.sc-general');
 
-    let angulo = 0;
+    const animarContenedores = () => {
 
-    const girarComponentes = () => {
-      angulo += 1;
-      componentes.forEach((componente, index) => {
-        const offset = 360 / componentes.length * index;
-        const radianes = (angulo + offset) * Math.PI / 180;
-        const x = Math.cos(radianes) * 100;
-        const y = Math.sin(radianes) * 100;
-        componente.style.transform = `translate(${x}px, ${y}px)`;
+      contenedores.forEach(contenedor => {
+        const imagenes = contenedor.querySelectorAll('.skill-icon');
+        let angulo = 0;
+
+        const girarImagenes = () => {
+          angulo += 1;
+
+          imagenes.forEach((imagen, index) => {
+            const offset = 360 / imagenes.length * index;
+            const radianes = (angulo + offset) * Math.PI / 180;
+            const x = Math.cos(radianes) * 120;
+            const y = Math.sin(radianes) * 120;
+            imagen.style.transform = `translate(${x}px, ${y}px)`;
+          });
+
+          requestAnimationFrame(girarImagenes);
+
+        };
+
+        girarImagenes();
+
       });
-      requestAnimationFrame(girarComponentes);
     };
 
-    girarComponentes();
+    animarContenedores();
 
     return () => {
-      cancelAnimationFrame(girarComponentes);
+      cancelAnimationFrame(animarContenedores);
     };
   }, []);
 
+  const english = {
+    english: "Advanced",
+    spanish: "Avanzado"
+  }
 
+  const spanish = {
+    english: "Native",
+    spanish: "Nativo"
+  }
+
+  const german = {
+    english: "Basic",
+    spanish: "Basico"
+  }
+
+  const skills = {
+    english: "Skills",
+    spanish: "Habilidades"
+  }
+
+
+  const language = "english";
 
 
   
   return (
     <div id="skills-container" className="page">
-      <h1 id="sc-title">Skills</h1>
-      <div id="skills-container-frontend" className="sc-general" ref={contenedorRef}>
+      <h1 id="sc-title">{skills[language]}</h1>
+      <div id="skills-container-frontend" className="sc-general" >
         <img src={html} className="sc-front-skill skill-icon"/>
         <img src={css} className="sc-front-skill skill-icon"/>
         <img src={js} className="sc-front-skill skill-icon"/>
         <img src={ts} className="sc-front-skill skill-icon"/>
         <img src={react} className="sc-front-skill skill-icon"/>
       </div>
-      <div id="skills-container-backend" className="sc-general" ref={contenedorRef}>
+      <div id="skills-container-backend" className="sc-general" >
         <img src={c} className="sc-back-skill skill-icon"/>
         <img src={java} className="sc-back-skill skill-icon"/>
         <img src={node} className="sc-back-skill skill-icon"/>
         <img src={express} className="sc-back-skill skill-icon"/>
         <img src={python} className="sc-back-skill skill-icon"/>
       </div>
-      <div id="skills-container-db" className="sc-general" ref={contenedorRef}>
+      <div id="skills-container-db" className="sc-general" >
         <img src={mysql} className="sc-db-skill skill-icon"/>
         <img src={sqlserver} className="sc-db-skill skill-icon"/>
         <img src={postgres} className="sc-db-skill skill-icon"/>
         {/* <img src={mongodb} className="sc-db-skill skill-icon"/> */}
       </div>
-      <div id="skills-container-extras" className="sc-general" ref={contenedorRef}>
+      <div id="skills-container-extras" className="sc-general" >
         <img src={git} className="sc-extra-skill skill-icon"/>
         <img src={github} className="sc-extra-skill skill-icon"/>
         <img src={powerbi} className="sc-extra-skill skill-icon"/>
       </div>
       <div id="skills-container-languages" className="sc-languages"> 
-        <h2 id="sc-title-languages">Languages</h2>
-        <Language img={spa} level="Native" className="sc-lang-skill skill-icon"/>
-        <Language img={usa} level="Advanced" className="sc-lang-skill skill-icon"/>
-        <Language img={germ} level="Basic" className="sc-lang-skill skill-icon"/>
+        {/* <h4 id="sc-title-languages">Languages</h4> */}
+        <Language img={spa} level={spanish[language]} className="sc-lang-skill"/>
+        <Language img={usa} level={english[language]} className="sc-lang-skill"/>
+        <Language img={germ} level={german[language]} className="sc-lang-skill"/>
       </div>
     </div>
   )

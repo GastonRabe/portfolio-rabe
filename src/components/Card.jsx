@@ -1,6 +1,9 @@
 import "../styles/card.css"
 
-export const Card = ({work, dateAndEnterprise, description}) => {
+export const Card = ({props}) => {
+
+  const {work, dateAndEnterprise, description} = props;
+
   return (
     <div className="card" id="card-container">
         <div className="card-body">

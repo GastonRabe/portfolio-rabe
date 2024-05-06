@@ -1,17 +1,36 @@
+import { Typewriter } from "react-simple-typewriter";
 import logo from "../assets/logo.png"
 import "../styles/aboutMePage.css";
 import "../styles/pages.css";
 import Arrow from '@mui/icons-material/KeyboardDoubleArrowDownSharp';
 
 export const AboutMePage = () => {
+
+  const carrer = {
+    english: "Software Engineer",
+    spanish: "Ingeniero en Informática"
+  }
+
+  const language = "english";
+  
+
   return (
     <div id="about-me-container" className="page">
       <div id="am-logo-container">
         <img src={logo} id="img-logo"/>
-        <p id="am-title">Gastón Rabe</p>
+        <span id="am-title">
+          <Typewriter
+              words={['Gastón Rabe']}
+              loop
+              cursor
+              typeSpeed={200}
+              deleteSpeed={200}
+              delaySpeed={2000}
+            />
+          </span>
       </div>
       <div id="am-description-container">
-        <h1>Ingeniero Informático</h1>
+        <h1>{carrer[language]}</h1>
       </div>
       <Arrow id="am-arrow"/>
     </div>

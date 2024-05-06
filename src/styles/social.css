@@ -16,6 +16,11 @@
 #linkedin {
     color: #0e76a8;
 }
+
+#github {
+    color: var(--color-opuesto);
+}
+
 .social-element {
     margin: 0px 10px;
 }

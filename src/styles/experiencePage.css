@@ -19,9 +19,6 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 10px;
-}
-
-#ec-curriculum-container {
-    
+    color: var(--color-opuesto);
 }
 

@@ -4,14 +4,15 @@
 
 .skill-icon {
     width: 70px;
-    filter: drop-shadow(0px 0px 20px #000);
+    filter: drop-shadow(0px 0px 20px var(--color-opuesto));
     margin: 10px;
+    position: absolute;
 }
 
 .sc-general, .sc-languages {
     position: relative;
     width: 50%;
-    height: 30%;
+    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,10 +31,11 @@
     box-shadow:  0px 0px 50px var(--color-secundario);
     border-radius: 80px;
     width: 80%;
+    height: 20%;
     justify-content: space-around;
 }
 
-#sc-title-languages, #sc-title {
+#sc-title {
     position: absolute;
     top: 10px;
 }

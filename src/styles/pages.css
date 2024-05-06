@@ -7,4 +7,5 @@
     align-items: center;
     align-content: center;
     position: relative;
+    color: var(--color-opuesto);
 }
