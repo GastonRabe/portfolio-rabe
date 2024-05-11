@@ -5,12 +5,11 @@
     height: 100%;
     flex-wrap: wrap;
     align-content: center;
-    
 }
 
 .icono {
-    font-size: 50px;
-    width: 50px;
+    font-size: 40px;
+    width: 40px;
 }
 
 #linkedin {

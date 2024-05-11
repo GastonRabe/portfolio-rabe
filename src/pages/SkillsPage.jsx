@@ -46,8 +46,8 @@ export const SkillsPage = () => {
           imagenes.forEach((imagen, index) => {
             const offset = 360 / imagenes.length * index;
             const radianes = (angulo + offset) * Math.PI / 180;
-            const x = Math.cos(radianes) * 120;
-            const y = Math.sin(radianes) * 120;
+            const x = Math.cos(radianes) * 80;
+            const y = Math.sin(radianes) * 80;
             imagen.style.transform = `translate(${x}px, ${y}px)`;
           });
 

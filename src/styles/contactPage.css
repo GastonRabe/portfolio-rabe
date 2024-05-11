@@ -6,7 +6,7 @@
     align-content: space-around;
     margin: 50px;
     color: var(--color-opuesto);
-    font-size: 40px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -29,6 +29,6 @@
       transform: scale(1);
     }
     50% {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
