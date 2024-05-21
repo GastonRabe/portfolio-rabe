@@ -112,7 +112,7 @@ export const SkillsPage = () => {
       <div id="skills-container-db" className="sc-general" >
         <img src={mysql} className="sc-db-skill skill-icon"/>
         <img src={sqlserver} className="sc-db-skill skill-icon"/>
-        <img src={postgres} className="sc-db-skill skill-icon"/>
+        {/* <img src={postgres} className="sc-db-skill skill-icon"/> */}
         {/* <img src={mongodb} className="sc-db-skill skill-icon"/> */}
       </div>
       <div id="skills-container-extras" className="sc-general" >
