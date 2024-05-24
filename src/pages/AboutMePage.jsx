@@ -5,17 +5,12 @@ import "../styles/pages.css";
 import Arrow from '@mui/icons-material/KeyboardDoubleArrowDownSharp';
 import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
+import { carrer } from "../assets/texts";
 
 export const AboutMePage = () => {
 
-  const carrer = {
-    english: "Software Engineer",
-    spanish: "Ingeniero en Informática"
-  }
-
   const {language} = useContext(LanguageContext);
   
-
   return (
     <div id="about-me-container" className="page">
       <div id="am-logo-container">

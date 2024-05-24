@@ -1,29 +1,15 @@
 import "../styles/education.css"
 import { useContext } from 'react';
 import { LanguageContext } from '../context/LanguageContext';
+import { inst, deg, year } from "../assets/texts";
 
 export const Education = ({props}) => {
   const {institution, degree, date, hasNext} = props;
     const start = "\{";
     const end = "\}";
     let coma='';
-
-    const inst = {
-        english: "institution",
-        spanish: "institución"
-      }
     
-      const deg = {
-        english: "degree",
-        spanish: "título"
-      }
-
-      const year = {
-        english: "date",
-        spanish: "fecha"
-      }
-    
-      const {language} = useContext(LanguageContext);
+    const {language} = useContext(LanguageContext);
 
     if (hasNext === 'true')
         coma=',';

@@ -6,19 +6,10 @@ import "../styles/navBar.css";
 import "../styles/navBtns.css";
 import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext.jsx";
+import { contact, aboutMe } from "../assets/texts.js";
 
 
 export const NavBar = () => {
-
-  const aboutMe = {
-    english: "About me",
-    spanish: "Sobre mi"
-  }
-
-  const contact = {
-    english: "Contact",
-    spanish: "Contacto"
-  }
 
   const {language} = useContext(LanguageContext);
 
